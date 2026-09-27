@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band & Albums</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rock-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase fs-3" href="index.html">Rush'n'Roll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Rock</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Services.html">Bands & Albums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-danger pb-2">
+            <h1>6 วงระดับตำนานและอัลบั้มทรงคุณค่า</h1>
+            
+            <!-- 9. Dropdown Component -->
+            <div class="dropdown">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    กรองตามแนวเพลง
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">ทั้งหมด</a></li>
+                    <li><a class="dropdown-item" href="#">Hard Rock</a></li>
+                    <li><a class="dropdown-item" href="#">Heavy Metal</a></li>
+                    <li><a class="dropdown-item" href="#">Thrash Metal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cards 6 รายการ Responsive Display -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/Kessoku Band.jpg" class="card-img-top" alt="Kessoku Band">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Kessoku Band <span class="badge bg-danger">Ani Song</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: Kessoku Band (2022)<br>ความสดใสและอบอุ่นสบายจากเพลงประกอบอนิเมะชื่อดัง</p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/Metallica.jpg" class="card-img-top" alt="Metallica">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Metallica <span class="badge bg-primary">Thrash Metal</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: Master of Puppets (1986)<br>หนึ่งในสี่บิ๊กโฟร์แห่งวงการ Thrash Metal ดนตรีเร็วหนักแน่น</p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/Iron Maiden.jpg" class="card-img-top" alt="Iron Maiden">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Iron Maiden <span class="badge bg-warning text-dark">Heavy Metal</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: The Number of the Beast (1982)<br>ขบวนทัพดนตรี Heavy Metal ฝั่งอังกฤษ (NWOBHM)</p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/Black Sabbath 60s.jpg" class="card-img-top" alt="Black Sabbath">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Black Sabbath <span class="badge bg-dark border">Heavy Metal</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: Paranoid (1970)<br>วงผู้บุกเบิกและเป็นรากฐานของดนตรี Heavy Metal ทั่วโลก</p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/GNR.jpg" class="card-img-top" alt="Guns N Roses">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Guns N' Roses <span class="badge bg-danger">Hard Rock</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: Appetite for Destruction (1987)<br>ผสมผสานความขบถและความดิบของดนตรีร็อกได้อย่างลงตัว</p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-rock h-100 shadow">
+                    <img src="Image/Motorhead.jpg" class="card-img-top" alt="Motorhead">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Motorhead <span class="badge bg-warning text-dark">Heavy Metal</span></h5>
+                        <p class="card-text text-secondary">อัลบั้ม: Ace of Spades (1980)<br>จังหวะดนตรีที่รวดเร็วราวกับดุดเสียงมอเตอร์ไซต์ </p>
+                        <a href="#" class="btn btn-rock btn-sm w-100">ฟังตัวอย่างเพลง</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-5 text-secondary">
+        <p class="mb-0">&copy; 2026 Rush'n'Roll. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

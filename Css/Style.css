@@ -1,0 +1,127 @@
+/* โทนสี Pure Black สำหรับสาย Rock / Metal */
+:root {
+    --bg-black: #000000;
+    --bg-dark-card: #0a0a0a;
+    --accent-red: #b30000;
+    --accent-red-hover: #800000;
+    --border-color: #222222;
+    --text-light: #ffffff;
+    --text-muted: #a0a0a0;
+}
+
+/* พื้นหลังหลักของทุกหน้า */
+html, body {
+    background-color: var(--bg-black) !important;
+    color: var(--text-light) !important;
+    font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.bg-rock-dark {
+    background-color: var(--bg-black) !important;
+    border-bottom: 2px solid var(--accent-red);
+}
+
+/* Button Custom */
+.btn-rock {
+    background-color: var(--accent-red);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-rock:hover {
+    background-color: var(--accent-red-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Cards บนพื้นหลังสีดำ */
+.card-rock {
+    background-color: var(--bg-dark-card) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-rock:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-red);
+}
+
+.card-rock .card-text {
+    color: var(--text-muted) !important;
+}
+
+/* Accordion (FAQ) */
+.accordion-item {
+    background-color: var(--bg-dark-card) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.accordion-button {
+    background-color: var(--bg-dark-card) !important;
+    color: var(--text-light) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #151515 !important;
+    color: var(--accent-red) !important;
+    box-shadow: none;
+}
+
+/* Modal Component */
+.modal-content {
+    background-color: var(--bg-dark-card) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-color);
+}
+
+.modal-header, .modal-footer {
+    border-color: var(--border-color) !important;
+}
+
+/* Form Controls (ช่องกรอกข้อมูล) */
+.form-control, .form-select {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-red) !important;
+    box-shadow: 0 0 0 0.25rem rgba(179, 0, 0, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: #666666 !important;
+}
+
+/* Tables (ตาราง) */
+.table-dark {
+    --bs-table-bg: var(--bg-dark-card) !important;
+    --bs-table-striped-bg: #141414 !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Progress Bar Track */
+.progress {
+    background-color: #222222 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu-dark {
+    background-color: var(--bg-dark-card) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-black) !important;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Hero Overlay */
+.hero-img {
+    filter: brightness(0.6);
+}

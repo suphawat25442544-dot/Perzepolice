@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rock-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase fs-3" href="index.html">Rush'n'Roll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Rock</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Bands & Albums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 6. Breadcrumb Component -->
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-danger text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">About Rock</li>
+            </ol>
+        </nav>
+    </div>
+
+    <main class="container my-4">
+        <h1 class="mb-4 text-uppercase border-bottom border-danger pb-2">วิวัฒนาการดนตรี Rock & Heavy Metal</h1>
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <img src="Image/Ave Mujica.jpg" class="img-fluid rounded shadow border border-secondary" alt="Rock History">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="fw-bold text-danger">จุดกำเนิดของความหนักแน่น</h3>
+                <p class="text-secondary">ดนตรี Rock พัฒนามาจาก Blues และ Rock 'n' Roll ในช่วงยุค 1960s ก่อนจะวิวัฒนาการเพิ่มความหนักหน่วงเป็น Hard Rock และ Heavy Metal ในยุค 1970s โดยมีวงอย่าง Black Sabbath, Led Zeppelin และ Deep Purple เป็นผู้บุกเบิก</p>
+                
+                <!-- 7. Progress Bar Component -->
+                <h6 class="mt-4">สัดส่วนความนิยมของผู้ฟังตามยุคสมัย</h6>
+                <div class="mb-2">
+                    <small>Classic Rock (ยุค 70s)</small>
+                    <div class="progress" style="height: 15px;">
+                        <div class="progress-bar bg-danger" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <small>Hard Rock / Glam Metal (ยุค 80s)</small>
+                    <div class="progress" style="height: 15px;">
+                        <div class="progress-bar bg-warning text-dark" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <small>Heavy Metal / Thrash Metal (ยุค 90s - ปัจจุบัน)</small>
+                    <div class="progress" style="height: 15px;">
+                        <div class="progress-bar bg-info" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Accordion Component -->
+        <h3 class="mb-3 text-danger">คำถามที่พบบ่อยเกี่ยวกับสายเพลงนี้ (FAQ)</h3>
+        <div class="accordion accordion-flush rounded shadow" id="rockFaq">
+            <div class="accordion-item bg-dark text-white border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Hard Rock กับ Heavy Metal ต่างกันอย่างไร?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#rockFaq">
+                    <div class="accordion-body text-secondary">
+                        Hard Rock จะยังมีกลิ่นอายของดนตรี Blues และจังหวะที่ฟังง่ายกว่า ส่วน Heavy Metal จะตัดองค์ประกอบ Blues ออก เพิ่มเสียงสังเคราะห์กีตาร์ที่หนักขึ้น บีตเร็ว และเนื้อหาที่เน้นจินตนาการหรือความดุดัน
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        เริ่มต้นฟัง Heavy Metal ควรเริ่มจากวงไหน?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#rockFaq">
+                    <div class="accordion-body text-secondary">
+                        แนะนำเริ่มจากวงระดับขึ้นหิ้งอย่าง Black Sabbath, Iron Maiden, Judas Priest และ Metallica เนื่องจากมีท่วงทำนองที่ติดหูและริฟฟ์กีตาร์ที่เป็นเอกลักษณ์
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-5 text-secondary">
+        <p class="mb-0">&copy; 2026 Rush'n'Roll. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
