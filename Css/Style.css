@@ -121,6 +121,38 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+/* Custom Hero Section */
+.hero-section {
+    background-color: var(--bg-black);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ควบคุมขนาดรูปภาพ Hero Center ให้ได้สัดส่วนพอดี */
+.hero-center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;     /* ความกว้างสูงสุดบนหน้าจอใหญ่ */
+    height: 400px;        /* ความสูงมาตรฐานบน Desktop */
+    object-fit: cover;    /* ครอบรูปพอดีโดยภาพไม่ยืดหรือเบี้ยว */
+    filter: brightness(0.85) contrast(1.1);
+    transition: all 0.3s ease;
+}
+
+.hero-center-img:hover {
+    filter: brightness(1) contrast(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.25) !important;
+}
+
+/* ปรับความสูงรูปภาพ Hero บนมือถือให้อัตโนมัติ */
+@media (max-width: 768px) {
+    .hero-center-img {
+        height: 250px;    /* ย่อความสูงลงบนมือถือและแท็บเล็ต */
+    }
+}
+
 /* Hero Overlay */
 .hero-img {
     filter: brightness(0.6);
